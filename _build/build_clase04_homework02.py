@@ -48,6 +48,7 @@ ejercicios = [
         ),
         "plantilla": "def ids_por_categoria(catalogo):\n    # ✏️ TU CÓDIGO AQUÍ\n    " + NI,
         "solucion": (
+            CATALOGO_STR + "\n\n"
             "def ids_por_categoria(catalogo):\n"
             "    indice = {}\n"
             "    for p in catalogo:\n"
@@ -144,8 +145,8 @@ ejercicios = [
         ),
         "visibles": [
             "_rango = buscar_rango_precio(CATALOGO, 50_000, 200_000)",
-            "assert len(_rango) == 4",
-            "assert _rango[0]['nombre'] == 'mouse'",
+            "assert len(_rango) == 3",
+            "assert _rango[0]['nombre'] == 'lampara'",
         ],
         "ocultos": [
             "assert buscar_rango_precio(CATALOGO, 0, 1_000) == []",

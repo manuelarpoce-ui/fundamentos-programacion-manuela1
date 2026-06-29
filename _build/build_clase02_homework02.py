@@ -225,9 +225,9 @@ ejercicios = [
             "assert _ticket['cambio'] == 36950.0",
         ],
         "ocultos": [
-            "_ticket2 = caja_registradora(50000, 2, 'tarjeta', 120000)",
+            "_ticket2 = caja_registradora(50000, 2, 'tarjeta', 110000)",
             "assert _ticket2['subtotal'] == 100000",
-            "assert _ticket2['cambio'] is None",   # 120000 < 116620
+            "assert _ticket2['cambio'] is None",   # 110000 < 116620
             "_ticket3 = caja_registradora(0, 2, 'efectivo', 50000)",
             "assert _ticket3['total'] is None",
         ],

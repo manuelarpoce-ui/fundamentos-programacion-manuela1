@@ -559,6 +559,8 @@ un pipeline de ciencia de datos:
 def _validar():
     import csv
     import tempfile
+    import pandas as pd
+    import numpy as np
 
     ruta_csv = os.path.join(
         os.path.dirname(__file__), "..", "curso", "datasets", "transacciones.csv"

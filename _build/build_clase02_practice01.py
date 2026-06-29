@@ -604,7 +604,7 @@ def _validar():
         return (imc, cat)
     assert interpretar_imc(70, 1.75) == (22.9, "normal")
     assert interpretar_imc(50, 1.70)[1] == "bajo peso"
-    assert interpretar_imc(90, 1.70)[1] == "sobrepeso"
+    assert interpretar_imc(90, 1.70)[1] == "obesidad"
     assert interpretar_imc(110, 1.70)[1] == "obesidad"
 
     def convertir_celsius(grados_c):

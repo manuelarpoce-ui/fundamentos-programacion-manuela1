@@ -168,8 +168,7 @@ ejercicios = [
             "import numpy as np",
             "# Con muchos lanzamientos, cada cara debe estar cerca de 1/6",
             "res2 = simular_dado(1_000_000, seed=99)",
-            "for cara in range(1, 7):",
-            "    assert abs(res2[cara] - 1/6) < 0.01",
+            "for cara in range(1, 7):\n    assert abs(res2[cara] - 1/6) < 0.01",
         ],
     },
     {
@@ -313,8 +312,7 @@ ejercicios = [
             "# Verificar que el mínimo de cada columna está en el índice indicado",
             "M3 = np.array([[9,7,2],[1,5,8],[3,4,6]])",
             "idx = indice_minimo_columnas(M3)",
-            "for j in range(3):",
-            "    assert M3[idx[j], j] == M3[:, j].min()",
+            "for j in range(3):\n    assert M3[idx[j], j] == M3[:, j].min()",
         ],
     },
     {

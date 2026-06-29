@@ -538,7 +538,7 @@ def _validar():
         iqr = q3 - q1
         return serie[(serie < q1 - 1.5 * iqr) | (serie > q3 + 1.5 * iqr)]
 
-    s_out = pd.Series([10, 11, 12, 10, 11, 500])
+    s_out = pd.Series(list(range(1, 21)) + [500])   # 20 normal + outlier; z(500)≈4.4 > 3
     assert 500 in outliers_zscore(s_out).values
     assert 500 in outliers_iqr(s_out).values
 
